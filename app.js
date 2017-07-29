@@ -5,7 +5,7 @@
 var allProjects = []
 
 //constructor to contain projects
-function Project (projectData) {
+function Projects (projectData) {
   this.projectName = projectData.projectName;
   this.skills = projectData.skills;
   this.fileLocation = projectData.fileLocation;
@@ -14,15 +14,16 @@ function Project (projectData) {
   this.body = projectData.body;
 }
 
-Project.prototype.toHtml = function() {
+Projects.prototype.toHtml = function() {
   var $newProject = $('article.template').clone();
 
   $newProject.removeClass('template');
   if (!this.publishedOn) $newProject.addClass('draft');
   $newProject.find('.byline a').html(this.fileLocation);
-  $newProject.find('.byline a').attr('href', this.skills);
+  $newProject.find('.byline a').html(this.skills);
   $newProject.find('h1:first').html(this.projectName);
   $newProject.find('.project-body').html(this.body);
+  $newProject.append('<hr>');
   return $newProject;
 };
 
@@ -31,12 +32,12 @@ projectData.sort(function(a,b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
-projectData.forEach(function(articleObject) {
-  allProjects.push(new Article(articleObject));
+projectData.forEach(function(projectObject) {
+  allProjects.push(new Projects(projectObject));
 });
 
-allProjects.forEach(function(article) {
-  $('#projects').append(article.toHtml());
+allProjects.forEach(function(project) {
+  $('#projects').append(project.toHtml());
 });
 
 
