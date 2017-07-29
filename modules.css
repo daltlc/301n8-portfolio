@@ -34,3 +34,12 @@
 .template {
   display: none;
 }
+
+.byline {
+  color: black;
+}
+
+.byline a {
+  font-weight: bold;
+  text-decoration: none;
+}
