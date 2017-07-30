@@ -8,7 +8,6 @@ var allProjects = []
 function Projects (projectData) {
   this.projectName = projectData.projectName;
   this.skills = projectData.skills;
-  this.fileLocation = projectData.fileLocation;
   this.publishedOn = projectData.publishedOn;
   allProjects.push(this);
   this.body = projectData.body;
@@ -16,11 +15,8 @@ function Projects (projectData) {
 
 Projects.prototype.toHtml = function() {
   var $newProject = $('article.template').clone();
-
-  $newProject.removeClass('template');
   if (!this.publishedOn) $newProject.addClass('draft');
-  $newProject.find('.byline a').html(this.fileLocation);
-  $newProject.find('.byline a').html(this.skills);
+  $newProject.find('.byline').html(this.skills);
   $newProject.find('h1:first').html(this.projectName);
   $newProject.find('.project-body').html(this.body);
   $newProject.append('<hr>');

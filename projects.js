@@ -1,10 +1,9 @@
 'use strict';
 var projectData = [
   {
-    projectName:     'Demo',
+    projectName:     'RLS',
     skills:         'Javscript',
-    fileLocation:  'Dalton Carr',
     publishedOn:    '07-29-2017',
-    body:        '<p>HEllo</p>'
+    body:        '<p>Hello</p>'
   },
 ];
