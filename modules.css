@@ -58,6 +58,7 @@ nav li{
   padding: 60px;
   list-style-type: none;
   display: inline-block;
+  cursor: pointer;
 }
 .mobile-top{
   margin-top: 50px;
@@ -91,6 +92,11 @@ article{
   margin:auto;
   width: 80%;
   position: relative;
+}
+
+/*About me*/
+#aboutMe{
+  text-align: center;
 }
 /*Comp view for main nav*/
 @media only screen and (min-width: 1000px) {

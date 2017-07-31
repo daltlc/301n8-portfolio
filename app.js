@@ -40,18 +40,22 @@ allProjects.forEach(function(project) {
   console.log('appended');
 });
 
+
+
+//NAV------------------------------------------------
 $('#projects').hide();
+$('#aboutMe').hide();
+$('#contact').hide();
 //Project selection
 $('.comp-top').on('click', 'li:first', function() {
-  $('#projects').show();
+  $('#aboutMe').fadeOut();
+  $('#projects').fadeIn();
 });
 //About me selection
 $('.comp-top').on('click', 'li:nth-child(2)', function() {
   $('#projects').fadeOut();
-  $('').show();
+  $('#aboutMe').fadeIn();
 });
-
-//Nav JS
 
 
 
