@@ -51,6 +51,14 @@ nav li{
   margin-left: 22px;
   font-size: 18px;
 }
+.comp-main{
+  text-align: center;
+}
+.comp-main li{
+  padding: 60px;
+  list-style-type: none;
+  display: inline-block;
+}
 .mobile-main{
   margin-top: 50px;
 }
@@ -84,9 +92,15 @@ article{
   width: 80%;
   position: relative;
 }
-
-@media only screen and (min-width: 400px) {
+/*Comp view for main nav*/
+@media only screen and (min-width: 1000px) {
   .mobile-main {
+    display: none;
+  }
+}
+/*Mobile view for main nav*/
+@media only screen and (max-width: 1000px) {
+  .comp-main {
     display: none;
   }
 }
