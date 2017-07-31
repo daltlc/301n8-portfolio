@@ -16,8 +16,8 @@ body{
 
 i{
   color: #F5F7FA;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: .1s;
+  -webkit-animation-delay: .1s;
   -webkit-animation-iteration-count: one;
 }
 

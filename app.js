@@ -40,6 +40,19 @@ allProjects.forEach(function(project) {
   console.log('appended');
 });
 
+$('#projects').hide();
+//Project selection
+$('.comp-top').on('click', 'li:first', function() {
+  $('#projects').show();
+});
+//About me selection
+$('.comp-top').on('click', 'li:nth-child(2)', function() {
+  $('#projects').fadeOut();
+  $('').show();
+});
+
+//Nav JS
+
 
 
 // Get the modal
