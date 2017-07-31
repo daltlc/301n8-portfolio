@@ -57,6 +57,17 @@ $('.comp-top').on('click', 'li:nth-child(2)', function() {
   $('#aboutMe').fadeIn();
 });
 
+//Project selection Mobile
+$('.mobile-top').on('click', 'li:first', function() {
+  $('#aboutMe').fadeOut();
+  $('#projects').fadeIn();
+});
+//About me selection Mobile
+$('.mobile-top').on('click', 'li:nth-child(2)', function() {
+  $('#projects').fadeOut();
+  $('#aboutMe').fadeIn();
+});
+
 
 
 // Get the modal
