@@ -32,11 +32,48 @@
 }
 
 
+.main{
+  width: 85%;
+  height: 300px;
+  background-color:#434A54;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 10px;
+}
+nav {
+
+}
+nav li{
+  display: inline;
+  color:#E6E9ED;
+  padding: 5px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-left: 22px;
+  font-size: 18px;
+}
+article{
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: one;
+}
+.template {
+  display: none;
+}
+
 .byline {
   color: black;
+  font-family: 'Dosis', sans-serif;
 }
 
 .byline a {
   font-weight: bold;
   text-decoration: none;
+}
+
+/*Project display box*/
+
+#projects {
+  margin:auto;
+  width: 80%;
+  position: relative;
 }

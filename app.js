@@ -9,20 +9,22 @@ function Projects (projectData) {
   this.projectName = projectData.projectName;
   this.skills = projectData.skills;
   this.publishedOn = projectData.publishedOn;
-  allProjects.push(this);
   this.body = projectData.body;
 }
 
 Projects.prototype.toHtml = function() {
   var $newProject = $('article.template').clone();
-  if (!this.publishedOn) $newProject.addClass('draft');
+  $newProject.removeClass('template');
+  //$newProject.attr('data-category', this.category);
+  //if (!this.publishedOn) $newProject.addClass('draft');
   $newProject.find('.byline').html(this.skills);
   $newProject.find('h1:first').html(this.projectName);
   $newProject.find('.project-body').html(this.body);
+  $newProject.find('time[pubdate]').attr('datetime', this.publishedOn);
+  $newProject.find('time[pubdate]').attr('title', this.publishedOn);
   $newProject.append('<hr>');
   return $newProject;
 };
-
 
 projectData.sort(function(a,b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
@@ -30,10 +32,12 @@ projectData.sort(function(a,b) {
 
 projectData.forEach(function(projectObject) {
   allProjects.push(new Projects(projectObject));
+  console.log('pushed');
 });
 
 allProjects.forEach(function(project) {
   $('#projects').append(project.toHtml());
+  console.log('appended');
 });
 
 
