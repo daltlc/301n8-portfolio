@@ -3,12 +3,15 @@ body{
 }
 .pic{
   float: left;
-  height: 200px;
+  height: 165px;
   width: 175px;
   background-color: #F5F7FA;
-  margin-top: 25px;
+  margin-top: 35px;
   margin-left: 25px;
   margin-right: 15px;
+  background-image: url('images/me.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 i{
@@ -16,6 +19,10 @@ i{
   -webkit-animation-duration: 1s;
   -webkit-animation-delay: 1s;
   -webkit-animation-iteration-count: one;
+}
+
+.comp-top i{
+  font-size: 100px;
 }
 /*
 .bar{
