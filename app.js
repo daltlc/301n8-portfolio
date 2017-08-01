@@ -43,33 +43,32 @@ allProjects.forEach(function(project) {
 
 
 //NAV------------------------------------------------
-
-$( document ).ready(function() {
+$(document).ready(function() {
   $('#projects').hide();
   $('#aboutMe').hide();
   $('#contact').hide();
-
-  //Project selection
-  $('.comp-top').on('click', 'li:first', function() {
-    $('#aboutMe').fadeOut();
-    $('#projects').fadeIn();
-  });
-  //About me selection
-  $('.comp-top').on('click', 'li:nth-child(2)', function() {
-    $('#projects').fadeOut();
-    $('#aboutMe').fadeIn();
-  });
-  //Project selection Mobile
-  $('.mobile-top').on('click', 'li:first', function() {
-    $('#aboutMe').fadeOut();
-    $('#projects').fadeIn();
-  });
-  //About me selection Mobile
-  $('.mobile-top').on('click', 'li:nth-child(2)', function() {
-    $('#projects').fadeOut();
-    $('#aboutMe').fadeIn();
-  });
 });
+  //Project selection
+$('.comp-top').on('click', 'li:first', function() {
+  $('#aboutMe').fadeOut();
+  $('#projects').fadeIn();
+});
+  //About me selection
+$('.comp-top').on('click', 'li:nth-child(2)', function() {
+  $('#projects').fadeOut();
+  $('#aboutMe').fadeIn();
+});
+  //Project selection Mobile
+$('.mobile-top').on('click', 'li:first', function() {
+  $('#aboutMe').fadeOut();
+  $('#projects').fadeIn();
+});
+  //About me selection Mobile
+$('.mobile-top').on('click', 'li:nth-child(2)', function() {
+  $('#projects').fadeOut();
+  $('#aboutMe').fadeIn();
+});
+
 
 
 /*Beginning fade in welcome*/
