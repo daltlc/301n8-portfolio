@@ -71,9 +71,9 @@ $('.mobile-top').on('click', 'li:nth-child(2)', function() {
 
 
 
-/*Beginning fade in welcome*/
-$( document ).ready(function() {
-  $('.comp-top li').hide();
-  $('.comp-top h1').delay(1000).fadeIn().delay(1000).fadeOut();
-  $('.comp-top li').delay(2800).fadeIn();
-});
+// /*Beginning fade in welcome*/
+// $( document ).ready(function() {
+//   $('.comp-top li').hide();
+//   $('.comp-top h1').delay(1000).fadeIn().delay(1000).fadeOut();
+//   $('.comp-top li').delay(2800).fadeIn();
+// });
