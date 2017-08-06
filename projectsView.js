@@ -11,6 +11,12 @@ projectsView.handleProjectNav = function() {
     $('#aboutMe').fadeOut();
     $('#projects').toggle();
   });
+  $('.mobile-top').on('click', 'li:first', function(){
+    console.log('clicked');
+    $('#aboutMe').fadeOut();
+    $('#projects').toggle();
+  })
+
 };
 //About me selection
 $('.comp-top').on('click', 'li:nth-child(2)', function() {
