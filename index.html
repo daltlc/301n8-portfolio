@@ -10,6 +10,20 @@
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="modules.css">
+
+
+  <script id="handlebarTemplate" type="text/x-handlebars-template">
+    <article class="animated fadeIn" data-category="{{category}}">
+      <header>
+        <h1>{{projectName}}</h1>
+        <div class="byline">
+          {{publishedOn}}
+        </div>
+      </header>
+      <section class="project-body">{{{body}}}</section>
+      <a href="#" class="read-on">Read on &rarr;</a>
+    </article>
+  </script>
   </head>
   <body>
     <div class="main animated jackInTheBox">
@@ -22,10 +36,12 @@
       </div>
       <div class ="comp-top">
         <!-- <h1>Hello, and welcome</h1> -->
-        <li><i class="fa fa-address-card fa-4x" aria-hidden="true"></i></li>
-        <li><i class="fa fa fa-flask fa-4x" aria-hidden="true"></i></li>
-        <li><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></li>
+        <li data-content="projects"><i class="fa fa-address-card fa-4x" aria-hidden="true"></i></li>
+        <li data-content="about"><i class="fa fa fa-flask fa-4x" aria-hidden="true"></i></li>
+        <li data-content="projects"><i class="fa fa-phone-square fa-4x" aria-hidden="true"></i></li>
       </div>
+      <section id="projects">
+      </section>
 
       <div class ="mobile-top">
         <li><i class="fa fa-address-card fa-2x" aria-hidden="true"></i></li>
@@ -33,18 +49,6 @@
         <li><i class="fa fa-phone-square fa-2x" aria-hidden="true"></i></li>
       </div>
     </div>
-
-      <section id="projects">
-      <article class="template animated fadeIn" data-category="cat">
-        <header>
-          <h1></h1>
-          <div class="byline">
-            <!--published <time pubdate datetime="2000-01-01">Publish Time</time>-->
-          </div>
-        </header>
-        <section class="project-body"></section>
-      </article>
-    </section>
 
     <section id ="aboutMe">
         <header>
@@ -58,7 +62,9 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
     <script type="text/javascript" src="projects.js"></script>
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="projectsView.js"></script>
   </body>
 </html>
