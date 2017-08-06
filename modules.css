@@ -30,18 +30,21 @@
   margin-right: 20px;
   margin-left: 20px;
 }
-
-
 .main{
   width: 85%;
   height: 300px;
-  background-color:#6885CE;
+  /*background-color:#4A89DC;*/
   margin: 0 auto;
   margin-top: 100px;
   padding: 10px;
+  border-width: 8px;
+  border-style:outset;
+  border-color:#FFFFFF;
+  background-image: url('images/space-wallpaper.jpg');
+  background-size:auto;
+  background-repeat: no-repeat;
 }
 nav {
-
 }
 nav li{
   display: inline;
@@ -51,8 +54,40 @@ nav li{
   margin-left: 22px;
   font-size: 18px;
 }
+#wrap{
+  width: 250px;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+}
+#wrap:hover .imageDescription {
+  visibility: visible;
+  opacity: .8;
+}
+.imageDescription {
+  padding-top: 30px;
+  position: absolute;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  background:#F0F0F0;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 50px;
+}
 .comp-top{
   text-align: center;
+}
+.comp-top #projectsWrap{
+  list-style-type: none;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 0px;
 }
 .comp-top li{
   padding: 60px;
@@ -76,27 +111,22 @@ article{
 .template {
   display: none;
 }
-
 .byline {
   color: black;
   font-family: 'Dosis', sans-serif;
 }
-
 .byline a {
   font-weight: bold;
   text-decoration: none;
 }
-
 /*Project display box*/
-
 #projects {
   margin:auto;
-  width: 80%;
+  width: 90%;
   position: relative;
   margin-top: 100px;
   margin-bottom: 100px;
 }
-
 /*About me*/
 #aboutMe{
   text-align: center;

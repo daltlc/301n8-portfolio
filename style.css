@@ -20,9 +20,21 @@ i{
   -webkit-animation-delay: .2s;
   -webkit-animation-iteration-count: one;
 }
+i:hover{
+  color:#AAB2BD;
+}
+
+.myName{
+  float: right;
+  color:white;
+  font-family: 'Dosis', sans-serif;
+  font-size: 26px;
+  margin-right: 30px;
+}
 
 .comp-top i{
   font-size: 130px;
+  text-align: center;
 }
 .comp-top h1 {
   font-size: 50px;
@@ -32,10 +44,12 @@ i{
 h1 {
   color:black;
   font-family: 'Dosis', sans-serif;
+  font-size: 24px;
 }
 p{
   color:black;
   font-family: 'Dosis', sans-serif;
+  font-size: 20px;
 }
 
 #aboutMe p{
@@ -43,3 +57,11 @@ p{
   margin-right: 150px;
   font-size: 20px;
 }
+
+
+.trail { /* className for the trail elements */
+    position: absolute;
+    height: 6px; width: 6px;
+    border-radius: 3px;
+    background: #EEFBFF;
+  }
