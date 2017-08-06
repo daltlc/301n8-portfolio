@@ -52,7 +52,7 @@ jQuery(function($, undefined) {
       this.echo('');
     }
   }, {
-    greetings: 'Javascript Interpreter',
+    greetings: 'Welcome',
     name: 'js_demo',
     height: 200,
     prompt: 'js> '
