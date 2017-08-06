@@ -33,6 +33,9 @@ allProjects.forEach(function(project) {
 
 
 
+
+
+
 // /*Beginning fade in welcome*/
 // $( document ).ready(function() {
 //   $('.comp-top li').hide();
