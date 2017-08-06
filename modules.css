@@ -131,6 +131,13 @@ article{
 #aboutMe{
   text-align: center;
 }
+#term_demo{
+  padding-top:;
+  width: 87.5%;
+  text-align: center;
+  margin: auto;
+}
+
 /*Comp view for main nav*/
 @media only screen and (min-width: 1200px) {
   .mobile-top {
