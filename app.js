@@ -14,14 +14,6 @@ function Projects (projectData) {
 
 Projects.prototype.toHtml = function() {
   var newProject = Handlebars.compile($('#handlebarTemplate').html());
-  // newProject.attr('data-category', this.category);
-  // if (!this.publishedOn) newProject.addClass('draft');
-  // $newProject.find('.byline').html(this.skills);
-  // $newProject.find('h1:first').html(this.projectName);
-  // $newProject.find('.project-body').html(this.body);
-  // $newProject.find('time[pubdate]').attr('datetime', this.publishedOn);
-  // $newProject.find('time[pubdate]').attr('title', this.publishedOn);
-  // $newProject.append('<hr>');
   return newProject(this);
 };
 
