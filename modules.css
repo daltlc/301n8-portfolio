@@ -39,8 +39,8 @@
   padding: 10px;
   border-width: 8px;
   border-style:outset;
-  border-color:#FFFFFF;
-  background-image: url('images/space-wallpaper.jpg');
+  border-color:#2A2D34;
+  background-image: url('images/space-wallpaper2.jpg');
   background-size:auto;
   background-repeat: no-repeat;
 }
@@ -112,7 +112,7 @@ article{
   display: none;
 }
 .byline {
-  color: black;
+  color: white;
   font-family: 'Dosis', sans-serif;
 }
 .byline a {

@@ -1,5 +1,6 @@
 body{
-  background-color: #E6E9ED;
+  /*background-color: #D7DBE8;*/
+  background-image: url('https://media.giphy.com/media/vxcuu6bLZDdm0/giphy.gif');
 }
 .pic{
   float: left;
@@ -9,7 +10,7 @@ body{
   margin-top: 35px;
   margin-left: 25px;
   margin-right: 35px;
-  background-image: url('images/me.jpg');
+  background-image: url('https://media.giphy.com/media/xTcnSWYZvafyhEACBO/giphy.gif');
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -42,26 +43,40 @@ i:hover{
 }
 
 h1 {
-  color:black;
+  color:white;
   font-family: 'Dosis', sans-serif;
   font-size: 24px;
 }
 p{
-  color:black;
+  color:white;
   font-family: 'Dosis', sans-serif;
   font-size: 20px;
 }
 
+#projects{
+  background-color: #2A2D34;
+  padding: 20px;
+}
+.aboutMe {
+}
+#aboutMe h1{
+  color:black;
+  font-size: 30px;
+}
 #aboutMe p{
   margin-left: 150px;
   margin-right: 150px;
   font-size: 20px;
+  background-color: #2A2D34;
+  border-width: 5px;
+  border-color:#3A3F44;
+  border-style: outset;
+  padding: 20px;
 }
-
-
-.trail { /* className for the trail elements */
-    position: absolute;
-    height: 6px; width: 6px;
-    border-radius: 3px;
-    background: #EEFBFF;
-  }
+.type-it{
+  font-size: 24px;
+  color:white;
+  float: right;
+  margin-right: 50px;
+  font-family: 'Dosis', sans-serif;
+}

@@ -21,9 +21,18 @@ projectsView.handleProjectNav = function() {
 //About me selection
 $('.comp-top').on('click', '#wrap:first', function() {
   $('#projects').fadeOut();
-  $('#aboutMe').toggle();
+  $('#aboutMe').toggle(1500);
 });
 
 $(document).ready(function() {
   projectsView.handleProjectNav();
+})
+//Type it js load
+$(document).ready(function() {
+  $('.type-it').typeIt({
+    speed: 150,
+    lifeLike: false,
+    autoStart: false
+  })
+.tiType('Dalton Carr')
 })
