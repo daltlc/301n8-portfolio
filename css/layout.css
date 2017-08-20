@@ -17,7 +17,7 @@
   border-width: 8px;
   border-style:outset;
   border-color:#2A2D34;
-  background-image: url('images/space-wallpaper2.jpg');
+  background-image: url('../images/space-wallpaper2.jpg');
   background-size:auto;
   background-repeat: no-repeat;
 }
@@ -27,4 +27,8 @@
   position: relative;
   margin-top: 100px;
   margin-bottom: 100px;
+}
+header{
+  height:auto;
+  width: auto;
 }
