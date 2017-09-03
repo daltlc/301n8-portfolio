@@ -1,0 +1,133 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height:300px;
+    position: relative;
+}
+nav {
+}
+nav li{
+  display: inline;
+  color:#E6E9ED;
+  padding: 5px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-left: 22px;
+  font-size: 18px;
+}
+#wrap{
+  width: 250px;
+  height: auto;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+}
+#wrap:hover .imageDescription {
+  visibility: visible;
+  opacity: .8;
+}
+.imageDescription {
+  padding-top: 30px;
+  position: absolute;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right: 0;
+  background:#F0F0F0;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 50px;
+}
+.comp-top{
+  text-align: center;
+}
+.comp-top #projectsWrap{
+  list-style-type: none;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 0px;
+}
+.comp-top li{
+  padding: 60px;
+  list-style-type: none;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 0px;
+}
+.mobile-top{
+  margin-top: 50px;;
+}
+.mobile-top li{
+  padding: 10px;
+  list-style-type: none;
+}
+article{
+  -webkit-animation-duration: .2s;
+  -webkit-animation-delay: .2s;
+  -webkit-animation-iteration-count: one;
+}
+.template {
+  display: none;
+}
+.byline {
+  color: white;
+  font-family: 'Dosis', sans-serif;
+}
+.byline a {
+  font-weight: bold;
+  text-decoration: none;
+}
+/*Project display box*/
+
+#aboutMe{
+  text-align: center;
+}
+#term_demo{
+  padding-top:;
+  width: 87.5%;
+  text-align: center;
+  margin: auto;
+}
+
+/*Comp view for main nav*/
+@media only screen and (min-width: 1200px) {
+  .mobile-top i{
+    display: none;
+  }
+}
+/*Mobile view for main nav*/
+@media only screen and (max-width: 1200px) {
+  .comp-top{
+    display: none;
+  }
+  .mobile-top{
+    /*display: none;*/
+  }
+
+}
+/*Mobile about me margin*/
+@media only screen and (max-width: 1000px) {
+  #aboutMe p{
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
