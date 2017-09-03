@@ -110,7 +110,7 @@ article{
 
 /*Comp view for main nav*/
 @media only screen and (min-width: 1200px) {
-  .mobile-top {
+  .mobile-top i{
     display: none;
   }
 }
@@ -119,6 +119,10 @@ article{
   .comp-top{
     display: none;
   }
+  .mobile-top{
+    /*display: none;*/
+  }
+
 }
 /*Mobile about me margin*/
 @media only screen and (max-width: 1000px) {

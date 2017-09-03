@@ -35,14 +35,12 @@ Projects.fetchAll = function(){
     projectsView.initIndexPage();
   })
 }
-projectsView.initIndexPage = function() {
+Projects.initIndexPage = function() {
   Projects.all.forEach(function(project) {
    $('#projects').append(project.toHtml());
     console.log('appended');
   })
 };
-
-
 
 // projectData.sort(function(a,b) {
 //   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
