@@ -28,16 +28,25 @@ Projects.loadAll = function(projectData){
 }
 
 
-Projects.fetchAll = function(){
-  $.getJSON('projects.json',function(projectData){
-    Projects.loadAll(projectData);
-    localStorage.projectData = JSON.stringify(projectData);
+Projects.fetchAll = function() {
+  if (localStorage.rawData) {
+    Projects.loadAll(JSON.parse(localStorage.rawData));
     projectsView.initIndexPage();
-  })
+  } else {
+
+    $.getJSON('../projects.json', function(rawData) {
+      Projects.loadAll(rawData);
+      localStorage.rawData = JSON.stringify(rawData);
+      projectsView.initIndexPage();
+    });
+  }
 }
+
+
+
 projectsView.initIndexPage = function() {
   Projects.all.forEach(function(project) {
-   $('#projects').append(project.toHtml());
+    $('#projects').append(project.toHtml());
     console.log('appended');
   })
 };
