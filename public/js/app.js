@@ -34,7 +34,7 @@ Projects.fetchAll = function() {
     projectsView.initIndexPage();
   } else {
 
-    $.getJSON('../projects.json', function(rawData) {
+    $.getJSON('projects.json', function(rawData) {
       Projects.loadAll(rawData);
       localStorage.rawData = JSON.stringify(rawData);
       projectsView.initIndexPage();
