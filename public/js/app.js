@@ -29,14 +29,14 @@ Projects.loadAll = function(projectData){
 
 
 Projects.fetchAll = function() {
-  if (localStorage.rawData) {
-    Projects.loadAll(JSON.parse(localStorage.rawData));
+  if (localStorage.projectData) {
+    Projects.loadAll(JSON.parse(localStorage.projectData));
     projectsView.initIndexPage();
   } else {
 
-    $.getJSON('projects.json', function(rawData) {
-      Projects.loadAll(rawData);
-      localStorage.rawData = JSON.stringify(rawData);
+    $.getJSON('projects.json', function(projectData) {
+      Projects.loadAll(projectData);
+      localStorage.projectData = JSON.stringify(projectData);
       projectsView.initIndexPage();
     });
   }
