@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 //   }))(request, response);
 // }
 
-app.use(express.static('public'));
+app.use(express.static('/public'));
 
 // app.get('/github/*', proxyGitHub);
 
