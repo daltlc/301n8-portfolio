@@ -3,7 +3,7 @@ const app = express();
 const requestProxy = require('express-request-proxy');
 const opn = require('opn'); //for opening in browser
 // const bodyParser = require('body-parser').urlencoded({extended: true});
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 
 function proxyGitHub(request, response) {
   console.log('Routing GitHub request for', request.params[0]);
@@ -24,8 +24,10 @@ app.get('/*', function(there, backAgain) {
 opn(`http://localhost:${PORT}`);  ///automatically opens in default browser
 
 
-
-app.listen(PORT, function() {
-  // lets you know which port your server has started on
-  console.log(`Port Number: ${PORT}`);
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
+// app.listen(PORT, function() {
+//   // lets you know which port your server has started on
+//   console.log(`Port Number: ${PORT}`);
+// });
