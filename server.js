@@ -20,3 +20,8 @@ app.use(express.static('public'));
 // app.get('/*', function(there, backAgain) {
 //   backAgain.sendFile('index.html', {root: './public'});
 // });
+
+app.listen(PORT, function() {
+  // lets you know which port your server has started on
+  console.log(`Port Number: ${PORT}`);
+});
