@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 // const requestProxy = require('express-request-proxy');
-const opn = require('opn'); //for opening in browser
+// const opn = require('opn'); //for opening in browser
 // const bodyParser = require('body-parser').urlencoded({extended: true});
 const PORT = process.env.PORT || 3000;
 
