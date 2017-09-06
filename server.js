@@ -21,7 +21,7 @@ app.get('/*', function(there, backAgain) {
   backAgain.sendFile('index.html', {root: './public'});
 });
 
-opn(`http://localhost:${PORT}`);  ///automatically opens in default browser
+// opn(`http://localhost:${PORT}`);  ///automatically opens in default browser
 
 
 app.listen(process.env.PORT || 3000, function(){
