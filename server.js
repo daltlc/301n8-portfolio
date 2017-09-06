@@ -25,3 +25,7 @@ app.listen(PORT, function() {
   // lets you know which port your server has started on
   console.log(`Port Number: ${PORT}`);
 });
+
+const bob = function(){
+  console.log('bob');
+}
