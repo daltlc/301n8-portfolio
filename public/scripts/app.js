@@ -3,8 +3,6 @@
 var app = app || {};
 (function(module){
 
-// var allProjects = [];
-// var projectsView = {};
 
 //constructor to contain projects
 function Projects (projectData) {
@@ -49,30 +47,5 @@ function Projects (projectData) {
     });
   }
 
-// projectsView.initIndexPage = function() {
-//   Projects.all.forEach(function(project) {
-//     $('#projects').append(project.toHtml());
-//     console.log('appended');
-  // })
-  // projectData.forEach(function(projectObject) {
-  //   allProjects.push(new Projects(projectObject));
-  //   console.log('pushed');
-  // });
-// };
-
   module.Projects = Projects;
 })(app);
-
-// projectData.sort(function(a,b) {
-//   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
-// });
-//
-// projectData.forEach(function(projectObject) {
-//   allProjects.push(new Projects(projectObject));
-//   console.log('pushed');
-// });
-//
-// allProjects.forEach(function(project) {
-//   $('#projects').append(project.toHtml());
-//   console.log('appended');
-// });
